@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currency</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+          converter
+        </div>
+        <nav class="nav-links">
+            <a href="index.html" >home</a>
+          <a href="dis.html" >Distance</a>
+          <a href="./temp.html">temprechar</a>
+          <a href="./data.html">Data</a>
+        </nav>
+      </header>
+
+      <center><h1 class="dis">currency</h1></center>
+      <center>
+        <form action="">
+            <div class="i&j">
+                <h1>India to Japanese</h1>
+                <label for="meter">India :</label>
+                <input type="number" placeholder="Enter Indian rupee" id="inp-inr">
+                <p id="op-jpy"></p>
+    
+                <input type="button" value="INR to JPY" onclick="itoj()">
+            </div>
+            <div class="i&p" style="padding-top: 10px;">
+                <h1>India to Neppal</h1>
+                <label for="foot">India :</label>
+                <input type="number" placeholder="Enter Indian ruppe" id="inp-inr-npr">
+                <p id="op-npr"></p>
+    
+                <input type="button" value="INR to NPR" onclick="itop()">
+            </div>
+            <div class="s&u" style="padding-top: 10px;">
+                <h1>Sri lanka to US</h1>
+                <label for="foot">Sri lanka :</label>
+                <input type="number" placeholder="Enter ruppe" id="inp-lkr">
+                <p id="op-usd"></p>
+    
+                <input type="button" value="Meter to Foot" onclick="stou()">
+            </div>
+            <div class="a&c" style="padding-top: 10px;">
+                <h1>Australia to chinese</h1>
+                <label for="foot">Australian :</label>
+                <input type="number" placeholder="Enter rupee" id="inp-aud">
+                <p id="op-cny"></p>
+    
+                <input type="button" value="Meter to Foot" onclick="atoc()">
+            </div>
+        </form>
+      </center>
+
+
+      <script src="js/script.js"></script>
+</body>
+</html>

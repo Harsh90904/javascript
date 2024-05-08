@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>con</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+          converter
+        </div>
+        <nav class="nav-links">
+            <a href="index.html" >home</a>
+          <a href="dis.html" >Distance</a>
+          <a href="./conr.html">conrecy</a>
+          <a href="./data.html">Data</a>
+        </nav>
+      </header>
+
+      <center><h1 class="dis">temperature</h1></center>
+      <center>
+        <form action="">
+            <div class="c&f">
+                <h1>Celsius to Fahrenheit</h1>
+                <label for="meter">Celsius :</label>
+                <input type="number" placeholder="Enter Celsius" id="inp-cel">
+                <p id="op-fah"></p>
+    
+                <input type="button" value="Celsius to Fahrenheit" onclick="ctof()">
+            </div>
+            <div class="f&c" style="padding-top: 10px;">
+                <h1>Fahrenheit to Celsius</h1>
+                <label for="foot">Fahrenheit :</label>
+                <input type="number" placeholder="Enter Fahrenheit" id="inp-fal">
+                <p id="op-cal"></p>
+    
+                <input type="button" value="Fahrenheit to Celsius" onclick="ftoc()">
+            </div>
+            <div class="k&f" style="padding-top: 10px;">
+                <h1>kelvin to Fahrenheit</h1>
+                <label for="foot">kelvin :</label>
+                <input type="number" placeholder="Enter kelvin" id="inp-kel">
+                <p id="op-fe"></p>
+    
+                <input type="button" value="kelvin to Fahrenheit" onclick="ktof()">
+            </div>
+            <div class="c&k" style="padding-top: 10px;">
+                <h1>Celsius to kelvin</h1>
+                <label for="foot">Celsius :</label>
+                <input type="number" placeholder="Enter Celsius" id="inp-ce">
+                <p id="op-ke"></p>
+    
+                <input type="button" value="Celsius to kelvin" onclick="ctok()">
+            </div>
+        </form>
+      </center>
+
+
+      <script src="js/script.js"></script>
+</body>
+</html>

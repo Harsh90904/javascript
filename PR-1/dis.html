@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distance</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+          converter
+        </div>
+        <nav class="nav-links">
+          <a href="index.html" >home</a>
+          <a href="conr.html" >corncy</a>
+          <a href="./temp.html">temprechar</a>
+          <a href="./data.html">Data</a>
+        </nav>
+      </header>
+    <center><h1 class="dis">Distance</h1></center>
+    <center>
+        <form action="" class="distans ">
+            <div class="mf">
+                <h1>meter to foot</h1>
+                <label for="meter">Meter :</label>
+                <input type="number" placeholder="Enter Meter" id="inp-meter">
+                <p id="op-foot"></p>
+    
+                <input type="button" value="Meter to Foot" onclick="mtof()">
+            </div>
+            <div class="f&m" style="padding-top: 10px;">
+                <h1>foot to meter</h1>
+                <label for="foot">foot :</label>
+                <input type="number" placeholder="Enter foot" id="inp-foot">
+                <p id="op-meter"></p>
+    
+                <input type="button" value="Meter to Foot" onclick="ftom()">
+            </div>
+            <div class="m&k" style="padding-top: 10px;">
+                <h1>Mter to km</h1>
+                <label for="foot">Meter :</label>
+                <input type="number" placeholder="Enter Meter" id="inp-meter-km">
+                <p id="op-km"></p>
+    
+                <input type="button" value="Meter to Foot" onclick="mtok()">
+            </div>
+            <div class="k&m" style="padding-top: 10px;">
+                <h1>km to meter</h1>
+                <label for="foot">KM :</label>
+                <input type="number" placeholder="Enter km" id="inp-km-meter">
+                <p id="op-meter-km"></p>
+    
+                <input type="button" value="Meter to Foot" onclick="ktom()">
+            </div>
+        </form>
+    </center>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
