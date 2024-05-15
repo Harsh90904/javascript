@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>school grade</title>
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hadding">
+        <h1>Swaminarayan Vidyamandir</h1>
+    </div>
+    <form class="form">
+        <table>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td><label for="std">Standard:</label></td>
+                <td><input type="text" id="std"></td>
+            </tr>
+            <tr>
+                <td><label for="ss">Social science :</label></td>
+                <td><input type="number" id="ss"></td>
+            </tr>
+            <tr>
+                <td><label for="en">English:</label></td>
+                <td><input type="number" id="eng"></td>
+            </tr>
+            <tr>
+                <td><label for="guj">Gujarati:</label></td>
+                <td><input type="number" id="guj"></td>
+            </tr>
+            <tr>
+                <td><label for="math">Mathematics:</label></td>
+                <td><input type="number" id="math"></td>
+            </tr>
+            <tr>
+                <td><label for="sci">Science :</label></td>
+                <td><input type="number" id="sci"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="button" onclick="calculateGrade()">Calculate Grade</button></td>
+            </tr>
+        </table>
+    </form>
+    
+    <div id="dis"></div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
