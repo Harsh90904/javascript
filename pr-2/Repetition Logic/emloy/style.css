@@ -1,0 +1,46 @@
+body{
+    background-image: url(./HR-Trends.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h2{
+    font-size: 40px;
+    text-align: center;
+}
+#employeeForm{
+    background-color: #dddddd;
+    padding: 20px;
+    width: 390px;
+    border-radius:10px;
+    margin-left: 40%;
+}
+#employeeForm button{
+    padding: 11px 15px;
+    border: none;
+    background-color: rgb(62, 62, 61);
+    color: antiquewhite;
+    border-radius: 10px;
+}
+#employeeForm button:hover{
+  transform: scale(1.05);
+}
+#employeeForm input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom:2px solid black ;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}

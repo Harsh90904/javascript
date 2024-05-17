@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employee Data</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Employee Data</h2>
+
+<form id="employeeForm">
+    <label>Employee Name:</label>
+    <input id="name" required><br><br>
+    
+    <label >Employee Role:</label>
+    <select id="role">
+        <option value="Manager">Manager</option>
+        <option value="Accountant">Accountant</option>
+        <option value="Cashier">Cashier</option>
+        <option value="Receptionist">Receptionist</option>
+        <option value="Janitor">Janitor</option>
+    </select><br><br>
+    
+    <label>Employee Salary:</label>
+    <input type="number" id="salary" required><br><br>
+    
+    <button type="button" value="" onclick="addEmployee()">Add Employee</button>
+</form>
+
+<br>
+
+<table id="employeeTable">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Salary</th>
+        </tr>
+    </thead>
+    <tbody id="employeeBody"></tbody>
+</table>
+
+<br>
+
+<div id="totalSalary">Total Salary: &#8377;<span id="total">0</span></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
