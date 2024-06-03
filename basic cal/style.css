@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(90deg, rgba(169,193,5,0.7651435574229692) 0%, rgba(89,196,39,1) 35%, rgba(6,145,173,1) 100%);
+}
+input{
+    width: 60px;    
+    padding: 20px;
+    margin: 10px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    transition: all 0.5s;
+}
+input:hover{
+    transform: scale(1);
+    box-shadow: -2px 2px 5px #834b18;
+}
+.box{
+    width: 350px;
+    margin: 10% auto 0 auto;
+    background-color: rgb(252, 252, 252, .5);
+    border-radius: 10px;
+    padding: 40px 0;
+}
+.or-color{
+    background-color: orangered;
+    color: white;
+}
+.display-box{
+        background-color: white;
+        border-radius: 10px;
+        transform: scaleY(10px);
+        margin: 10px 10px;
+}
+.display-box h4{
+    font-size: 20px;
+    padding: 20px;
+}
