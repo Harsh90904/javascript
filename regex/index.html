@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">  
+        <form id="contact">
+          <h3>REGEX</h3>
+          <h4>Contact us for custom quote</h4>
+          <fieldset>
+            <input placeholder="Your name" type="text"  id="name">
+            
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Email Address" type="text" id="email" >
+
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Phone Number" type="text" id="number" >
+            <p id="numberError"></p>
+          </fieldset>
+          <fieldset>
+            <input placeholder="password" type="text" id="password">
+            <p id="passwordError"></p>
+          </fieldset>
+          <fieldset>
+            <input type="button" value="submit" onclick="regex();return false" refe>
+          </fieldset>
+        </form>
+
+        <p id="res" class="text"></p>
+      </div>
+
+
+      <script src="script.js"></script>
+</body>
+</html>
