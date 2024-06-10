@@ -1,3 +1,4 @@
+
 let Array_data = [];
 
 function data() {
@@ -25,9 +26,11 @@ function ui_maker() {
         let father = document.createElement("td");
         father.innerHTML = ele.father;
         let delete_button = document.createElement("button");
+        delete_button.setAttribute("class" , "delete")
         let delete_button_msg = document.createTextNode("Delete");
         delete_button.append(delete_button_msg);
         let edit_button = document.createElement("button");
+        edit_button.setAttribute("class" , "delete")
         let edit_button_msg = document.createTextNode("Update");
         edit_button.append(edit_button_msg);
         document.getElementById("tbody").append(tr);
