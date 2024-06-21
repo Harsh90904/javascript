@@ -6,22 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Countdown Timer with Quotes</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="all.min.css">
 </head>
 
 <body>
   <div class="form">
-    <div id="timer">30</div>
-    <div id="quote">Everyone else is already taken. ― Oscar Wilde</div>
+    <div class="quote-container">
+      <p id="quote">Loading...</p>
+      <div class="loader"></div>
+    </div>
     <div class="media">
       <div class="like-btn">
-        <button onclick="clickCounter()"><i class="fa-solid fa-heart"
-            style="color: #ff0000; font-size: 40px;"></i></button>
+        <button onclick="clickCounter()" class="heart">&#10084;</button>
         <p id="dis"></p>
       </div>
       <div class="downlode-btn">
-        <a href="file:#quote">
-          <i class="fa-solid fa-download" style="color: #ffffff; font-size: 40px;"></i>
+        <a href="file:#quote" style="color: aliceblue;">
+          &#x2B07;
         </a>
       </div>
     </div>
