@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login and Sign Up Forms</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <form  action="" id="displaylo"  class="p-2 mr"  style="display: none; text-align: center">
+      <h2>Login Form</h2>
+      <div class="container">
+        <div class="row align-item-center justify-content-center">
+         <div class="logininp  w-25 bg-secondary p-3">
+          <input type="email" placeholder="Email"  id="login-emil"  class="pb-2"/>
+          <input type="password" placeholder="Password" id="login-pass" class="pb-2"/>
+          <div class="login pt-3">
+            <button type="button"  class="btn btn-outline-warning" id="loginpage" onclick="Login()">Login</button>
+          <p class="text-white pt-3">
+            Already  have not account?
+            <button type="button"  class="btn btn-outline-warning" onclick="displaySignUp()">Sign Up</button>
+          </p>
+          </div>
+         </div>
+        </div>
+      </div>
+    </form>
+
+    <form action="" id="displaysi" style="text-align: center;" class="mr">
+      <h2 class="pb-3">Sign Up Form</h2>
+      <div class="container">
+        <div class="row align-item-center justify-content-center">
+          <div class="logininp w-25 bg-secondary pt-3">
+            <input type="email" placeholder="Email" id="sign-emil"  class="pb-2"/>
+            <input type="password" placeholder="Password" id="sign-pass" class="pb-2"/>
+            <input type="password" placeholder="Confirm Password" class="pb-2"  id="sign-com-pass"/>
+            <div class="button pt-3">
+              <button
+                type="button"
+                class="btn btn-outline-warning"
+                onclick="SignUp()"
+                id="signpage"
+              >
+                Sign Up
+              </button>
+              <p class="text-white">
+                Already have an account?
+                <button
+                  type="button"
+                  class="btn btn-outline-warning"
+                  onclick="displayLogin()"
+                >
+                  Login
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

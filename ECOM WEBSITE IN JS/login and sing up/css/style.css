@@ -1,0 +1,18 @@
+.logininp input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  outline: none;
+  color: antiquewhite;
+}
+.logininp input::placeholder {
+
+  color: antiquewhite;
+}
+.logininp {
+  border-radius: 20px;
+  
+}
+.mr {
+  margin: 13% auto;
+}
