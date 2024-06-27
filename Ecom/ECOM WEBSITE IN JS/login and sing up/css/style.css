@@ -1,0 +1,35 @@
+.logininp input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid rgb(7, 7, 7);
+  outline: none;
+  color: rgb(17, 17, 17);
+}
+.logininp input::placeholder {
+
+  color:black;
+}
+.logininp {
+  border-radius: 20px;
+  
+}
+.cen{
+  margin-left: 15%;
+}
+
+.mr {
+  margin: 13% auto;
+}
+
+a{
+  text-decoration: none;
+  color: antiquewhite ;
+  font-size: 10px;
+}
+.loginab{
+  width: 500px;
+  top: 30%;
+  right: 0;
+  height: 150px;
+  border-radius: 20px  0 0  20px;
+}
