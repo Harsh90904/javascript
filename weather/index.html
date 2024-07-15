@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="">
-        <input type="text" id="inp-city" placeholder="Enter a city name">
-        <button id="sbm" type="submit">&#128269</button>
-    </form>
-    <p id="res"></p>
+    <div class="container">
+        <h1>Weather Forecast</h1>
+        <form action="#" id="weatherForm">
+            <input type="text" id="inp-city" placeholder="Enter a city name">
+            <button id="sbm" type="submit">&#128269;</button>
+        </form>
 
-    <img src="" alt="" id="icon">
-    <div id="forecast"></div>
+        <div id="weatherResult">
+            <h2 id="res"></h2>
+            <img src="" alt="" id="icon">
+        </div>
+        <div id="forecast" class="forecast-grid" ></div>
+    </div>
 
-    <script src="script.js"></script>
-
+    <script src="script.js"></script> 
 </body>
 </html>
