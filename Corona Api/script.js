@@ -1,25 +1,39 @@
 document.getElementById("sbm").addEventListener("click", function (e) {
     e.preventDefault();
 
-    let staste = document.getElementById("inp-sta").value;
-    let date = document.getElementById("inp-date").value;
-    let api = `https://data.covid19india.org/state_district_wise.json`
+    let state = document.getElementById("inp-sta").value;
+    let url = `https://covid-19-data.p.rapidapi.com/country?name=${state}&format=json`;
 
-    fetch(weatherdate)
-    .then(response => response.json())
-    .then(data => {
-        document.getElementById("forecast").innerHTML = ''; 
-        for (let i = 0; i < data.$(staste).length; i++) {
-            let div = document.createElement("div");
-            div.classList.add("forecast-item"); 
-            div.innerHTML = `
-                <h3>${data.list[i].dt_txt.slice(0, 10)}</h3>
-                <p>${data.list[i].weather[0].description}</p>
-                <p>Temperature: ${data.list[i].main.temp}°C</p>
-                <p>Wind Degree: ${data.list[i].wind.deg}</p>
-                <hr>
-            `;
-            document.getElementById("forecast").appendChild(div);
+    const options = {
+        method: 'GET',
+        headers: {
+            'x-rapidapi-key': '90fe476f49mshe7a5233ff1d00d7p14501djsn3e8dd4ff67bd',
+            'x-rapidapi-host': 'covid-19-data.p.rapidapi.com'
         }
-    });
-    })        
+    };
+
+    fetch(url, options)
+        .then(response => {
+            return response.json();
+        })
+        .then(data => {
+            document.getElementById("forecast").innerHTML = '';
+
+            if (data.length > 0) {
+                data.forEach(country => {
+                    let div = document.createElement("div");
+                    div.classList.add("forecast-item");
+                    div.innerHTML = `
+                    <h3>${country.country}</h3>
+                    <p>Active Cases: ${country.confirmed}</p>
+                    <p>Active recovered: ${country.recovered}</p>
+                    <p>Active deaths: ${country.deaths}</p>
+                    <hr>
+                `;
+                    document.getElementById("forecast").appendChild(div);
+                });
+            } else {
+                document.getElementById("forecast").innerHTML = `<p>No data found for ${state}</p>`;
+            }
+        })
+});
