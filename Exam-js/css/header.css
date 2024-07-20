@@ -1,0 +1,223 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+.container{
+    width: 1320px;
+    margin:  0 auto;
+}
+body {
+    box-sizing: border-box;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(255, 255, 255);
+    background-image: url("../img/pizza/pizza.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #0e0101;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(215, 215, 215, 0.5); 
+    padding: 10px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.header .navigation ul li {
+    float: left;
+    position: relative;
+}
+
+.header .navigation ul li a {
+    font-size: 18px;
+    color: #0c0000;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: all .2s ease-in-out;
+}
+
+.header .navigation ul li a:hover {
+    background-color: rgba(0, 187, 255, 0.7);
+    border-radius: 20px;
+    }
+
+
+
+#toggle,
+.header label {
+    display: none;
+    cursor: pointer;
+}
+
+.menu {
+    width: 45px;
+    height: 35px;
+}
+
+
+
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 4%;
+
+}
+
+.home-content {
+   
+    max-width: 600px;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0dbfff;
+}
+
+.home-content p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+
+}
+
+
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+
+    width: 345px;
+    height: 50px;
+  
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #0dbfff;
+    border: 2px solid #0dbfff;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+
+}
+.btn-box a:hover {
+    color: #0dbfff;
+
+}
+
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: #0dbfff;
+}
+.btn-box a:nth-child(2):hover {
+    color: #081b29;
+
+}
+.btn-box a:nth-child(2)::before {
+background: #0dbfff;
+
+}
+
+.btn-box a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #11476d;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+
+.inpbox input , textarea {
+    padding: 10px;
+    margin: 10px;
+    border: 0;
+    outline: none;
+}
+
+.inpbox button{
+    padding: 10px 30px ;
+    border: 0;
+    background-color: #0c0000;
+    color: aliceblue;
+    border-radius: 30px;
+    transition: all 0.5s ease-in-out;
+}
+.inpbox button:hover{
+    background-color: #0dbfff;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    align-items: stretch;
+}
+.grid-item{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 15px;
+    padding: 10px;
+}
+.cart-h4{
+    padding:10px 0;
+    font-size: 30px;
+}
+.cart-h3{
+    padding-bottom:10px;
+    font-size: 30px;
+}
+.grid-p{
+    padding-bottom:10px ;
+    font-size:18px ;
+}
+
+.grid-img{
+    width: 200px;
+    height: 200px;
+}
+.gird-text{
+    text-align: center;
+}

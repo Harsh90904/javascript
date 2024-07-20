@@ -1,0 +1,30 @@
+1. HTML Structure (5 points) :
+​​- Create an HTML file with a well-organized structure for the Recipe Book application.
+​- Include an input form to add new recipes and a dynamic list to display existing recipes. - Fields for each recipe should include title, ingredients, instructions, and cuisine type.
+
+2. Adding Recipes (5 points) :
+​- Implement a function (`addRecipe`) to collect information from users when adding a new recipe.
+- Validate that the recipe title and ingredients are provided before adding a recipe. - Format the recipe data and add it to the recipe list dynamically.
+
+3. Displaying Recipes (5 points) :
+​- Create a function (`displayRecipes`) to dynamically showcase recipes on the page. - Display each recipe with its title, ingredients, instructions, and cuisine type.
+
+4. Local Storage (10 points) :
+​- Utilize local storage to persist recipe data even when the page is refreshed.
+- Implement functions to load recipe data from local storage on page load and save data when recipes are added or modified.
+
+5. Editing Recipes (5 points) :
+- Develop a function (`editRecipe`) to allow users to edit existing recipes.
+​- Identify a unique identifier for each recipe to ensure accurate editing.
+
+6. Deleting Recipes (5 points) :
+- Implement a function (`deleteRecipe`) to allow users to remove recipes from the list. - Update the page dynamically when a recipe is deleted.
+
+7. Advanced Search and Filtering (10 points) :
+- Add a searching feature by recipe title and ingredients to quickly locate specific recipes.
+​- Implement a filtering feature by cuisine type to narrow down the displayed recipes.
+​- Introduce an advanced search option, allowing users to search for recipes based on multiple criteria simultaneously.
+
+8. User Interaction and UI (5 points) :
+- Ensure that input fields are cleared after successfully adding or editing a recipe.
+​- Implement a visually appealing and intuitive interface for a delightful user experience.
