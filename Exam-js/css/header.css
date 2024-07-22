@@ -9,12 +9,24 @@
     width: 1320px;
     margin:  0 auto;
 }
-body {
+.body {
     box-sizing: border-box;
     font-weight: 400;
     font-style: normal;
     background-color: rgb(255, 255, 255);
     background-image: url("../img/pizza/pizza.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #0e0101;
+}
+.bg {
+    box-sizing: border-box;
+    font-weight: 400;
+    margin: 30px 0;
+    font-style: normal;
+    background-color: rgb(255, 255, 255);
+    background-image: url("../img/empty-bento-box-set-with-copy-space-text-food-with-copy-space-text-food-top-view-flat-lay-black-wooden-table-background_249006-13459.avif");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -197,9 +209,12 @@ background: #0dbfff;
     align-items: stretch;
 }
 .grid-item{
+    background-color: aliceblue;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     border-radius: 15px;
-    padding: 10px;
+    padding: 30px;
+    margin: 0 auto;
+    text-align: center;
 }
 .cart-h4{
     padding:10px 0;
@@ -220,4 +235,7 @@ background: #0dbfff;
 }
 .gird-text{
     text-align: center;
+}
+.padd-60{
+    padding-top: 60px;
 }
